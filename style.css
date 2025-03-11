@@ -1,0 +1,85 @@
+body{
+    background-image: url(WEBINF6A\modul\image\dragon-ball-orange.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    padding: 20px;
+    margin: 10px 5px 20px 30px;
+    display: flex;
+    gap: 10px;
+    width: 600px;
+    border-radius: 75px;
+    background-color: aquamarine;
+}
+
+header img{
+    border-radius: 50%;
+}
+header hr{
+    margin-top: -20px;
+    margin-bottom: -10px;
+}
+
+
+header figcaption{
+    margin-top: 50px;
+}
+
+.name{
+    margin-top: 30px;
+    font-family: cursive
+}
+
+.buttons {
+    margin: -10px 0 0 425px;
+}
+
+.buttons button {
+    background: darkcyan;
+    color: white;
+    border: none;
+    padding: 5px 5px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.buttons button:hover {
+    background: #0056b3;
+}
+
+#socmed{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 700px;
+    margin-top: -250px;
+}
+
+#gmail{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ig{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+}
+
+.work-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
