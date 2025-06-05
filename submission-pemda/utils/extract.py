@@ -1,11 +1,17 @@
 import requests
-import logging
 import pandas as pd
 from bs4 import BeautifulSoup
 
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
+    )
+}
+
 def scrape_data(url: str) -> list:
     try:
-        response = requests.get(url, timeout=10)
+        response = requests.get(url, headers=HEADERS, timeout=10)
         response.raise_for_status()
     except requests.exceptions.RequestException as err:
         raise Exception(f"Gagal mengakses {url}: {err}")
@@ -35,5 +41,3 @@ def scrape_data(url: str) -> list:
         return []
 
     return product
-    
-    
