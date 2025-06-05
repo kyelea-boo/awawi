@@ -9,7 +9,7 @@ HEADERS = {
     )
 }
 
-def scrape_data(url: str) -> list:
+def ambil_data(url: str) -> list:
     try:
         response = requests.get(url, headers=HEADERS, timeout=10)
         response.raise_for_status()
